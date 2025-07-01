@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main-principal">
+      <section class="sobre-mi">
+        <img
+          src="assets/fotoPerfilOrig.jpg"
+          alt="foto de perfil"
+          class="img-perfil"
+        />
+
+        <div class="detalles-contenedor">
+          <h1 class="carta-titulo">FRANCO PAGANONI - DESARROLLADOR WEB</h1>
+          <p class="info">
+            Creando paginas web desde 2022, empecé mi carrera estudiando con
+            cursos de HTML y CSS en <em>Platzi</em>, luego recorrí dos años
+            junto a <em>TECLAB</em> para ser técnico superior en programación,
+            fui sumando proyectos a mi github, aprendiendo y mejorando, seguí
+            con los cursos de <em>CodigoFacilito</em> y hoy, felizmente, estoy
+            cursando la carrera de FullStack en <em>SoyHenry</em>.
+          </p>
+        </div>
+      </section>
+
+      <section class="tecnologias-fav">
+        <h2 class="titulo-tecnologias">
+          <em>TECNOLOGÍAS USADAS EN MIS PROYECTOS</em>
+        </h2>
+        <div class="contenedor-cards">
+          <div class="cards">
+            <div class="contenedor-img HTML"></div>
+            <h4 class="card-titulo">HTML</h4>
+          </div>
+          <div class="cards">
+            <div class="contenedor-img CSS"></div>
+            <h4 class="card-titulo">CSS</h4>
+          </div>
+          <div class="cards">
+            <div class="contenedor-img Javascript"></div>
+            <h class="card-titulo">JavaScript</h>
+          </div>
+          <div class="cards">
+            <div class="contenedor-img Typescript"></div>
+            <h3 class="card-titulo">TypeScript</h3>
+          </div>
+          <div class="cards">
+            <div class="contenedor-img React"></div>
+            <h3 class="card-titulo">React</h3>
+          </div>
+          <div class="cards">
+            <div class="contenedor-img Nodejs"></div>
+            <h3 class="card-titulo">NodeJS</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="actividades-fav">
+        <form action="" class="form-actividades-fav">
+          <h2 class="titulo_actividades">Actividades favoritas</h2>
+          <label class="labels" for="nombre"
+            >Titulo
+            <input
+              id="inputTitulo"
+              class="inputs"
+              type="text"
+              name="nombre"
+              placeholder="Titulo"
+            />
+          </label>
+          <label class="labels" for="descripcion"
+            >Descripción
+            <textarea
+              id="inputDescripcion"
+              class="inputs input-textarea"
+              name="descripcion"
+              placeholder="Descripción de tu actividad"
+            ></textarea>
+          </label>
+
+          <label class="labels" for="img"
+            >Imagen(URL)
+            <input
+              id="inputImgURL"
+              class="inputs"
+              type="url"
+              name="img"
+              placeholder="Imagen de tu actividad favorita"
+            />
+          </label>
+
+          <button class="button-agregar" id="boton-agregar" type="button">
+            Agregar
+          </button>
+        </form>
+        <div class="contenedor-tarjetas" id="contenedor-tarjetas"></div>
+      </section>
+    </main>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>
